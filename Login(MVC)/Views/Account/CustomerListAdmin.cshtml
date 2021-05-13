@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "CustomerListAdmin";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>Customer List for Admin user</h2>
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Name: </label>
+<input type="text" name="Name" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Gender: </label>
+<input type="text" name="Gender" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> City: </label>
+<input type="text" name="City" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Region: </label>
+<input type="text" name="Region" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Last Purchase: </label>
+<input type="text" name="LastPurchase" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Classification: </label>
+<input type="text" name="Classification" required="" /><br />
+
+<label><i class="fa fa-user" aria-hidden="true"></i> Seller: </label>
+<input type="text" name="seller" required="" /><br />
+
+
+<form action="PopulateTable" method="get">
+    <input type="submit" value="Populate Table" />
+    <table>
+        <tr>
+            <th>Classification</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Region</th>
+            <th>Last Purchase</th>
+        </tr>
+        <tr>
+            <td>Teste</td>
+        </tr>
+        <tbody id="table-body"></tbody>
+    </table>
+</form>
